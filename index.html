@@ -16,6 +16,9 @@
     <!-- Custom Style  -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <style>
+ 
+  </style>
   <body>
     <div class="flex">
       <div style="width: 100%">
@@ -39,11 +42,11 @@
               <span class="line"></span>
               <div class="menu-items">
                 <ul>
-                  <li class="item active">
+                  <li class="item " data-value="dashboard">
                     <i class='bx bx-grid-alt'></i>
                     <span class="menu-item-name">Dashboard</span>
                   </li>
-                  <li class="item" style="padding: 20px 0 10px 0;">
+                  <li class="heading" style="padding: 20px 0 10px 0;">
                     <span class="menu-item-name-main">Other Options</span>
                   </li>
                   <li class="item">
@@ -84,10 +87,10 @@
           </div>
           <div style="width: 100%">
             <div class="content">
-              <div class="">
+              <div class="hide dashboard" >
                 <div class="sub-sidebar">
                   <ul class="flex sub-menu">
-                    <li class="item">
+                    <li class="item active">
                         <i class='bx bx-grid-alt'></i>
                       <span> Dashboard </span>
                     </li>
@@ -109,7 +112,13 @@
                     </li>
                   </ul>
                 </div>
-                <div class="sub-content"></div>
+                <div class="sub-content" >
+                    <div class="flex">
+                        <div class="update_package_info">
+                            <h1> Update Package info</h1>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -117,5 +126,6 @@
       </div>
     </div>
     <footer></footer>
+    <script src="./js/script.js" ></script>
   </body>
 </html>
